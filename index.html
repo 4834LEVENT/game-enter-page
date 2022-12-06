@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Works</title>
+    <style>
+      /*input,
+      label {
+        display: block;
+      }*/
+      body{
+        background-image:url("https://d.neoldu.com/news/63555.jpg") ;
+        background-repeat: no-repeat;
+        background-size:100% 100%;}
+        
+      div {
+        padding: 10px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        text-shadow:4px 4px 4px rgb(218, 13, 47) ;
+       
+      }
+      div input {
+        background-color: aqua;
+      }
+      /*.display {
+        display: flex;
+        margin: 20px;*/
+      
+      #container{
+        text-align: center;
+      }
+      h1{
+        color: red;
+        text-shadow:10px 1px 10px red ;
+        font-size:60px ;
+      }
+      h3{
+        color: white;
+      }
+   
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <form action="https://www.clarusway.com">
+        <h1>Welcome to My Game</h1>
+        <h3>Enter Your İnformation</h3>
+        <div>
+          <label for="name">Name :</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="enter your name please"
+          />
+          <br /><br />
+        </div>
+
+        <div>
+          <label for="surname">surname:</label><br />
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="enter your surname please"
+          />
+          <br /><br />
+        </div>
+        <div>
+          <label for="username">username :</label> <br />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="enter your username please"
+          />
+          <br /><br />
+        </div>
+        <div>
+          <label for="email">email:</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="enter your email please"
+          />
+          <br /><br />
+        </div>
+        <div>
+          <label for="number">Tel:</label><br />
+          <input type="number" name="tel" id="number" placeholder="enter your number" /><br /><br />
+        </div>
+        <div>
+          <label for="password">Password:</label><br />
+          <input type="password" name="password" id="password" placeholder="enter your password" /><br /><br />
+        </div>
+
+        <div>
+          <label>Gender</label><br>
+          <label for="erkek">Erkek</label><br />
+          <input type="radio" name="Cinsiyet" id="erkek" /><br /><br />
+          <label for="kadın">Kadın</label><br />
+          <input type="radio" name="Cinsiyet" id="kadın" /><br /><br />
+        </div>
+
+        <div>
+          <p>Which days are you busy.</p>
+          <input type="checkbox" name="days" value="monday" /> Monday
+          <input type="checkbox" name="days" value="tuesday" />Tuesday
+          <input type="checkbox" name="days" value="wednesday" /> Wednesday
+          <input type="checkbox" name="days" value="thursday" /> Thursday
+          <input type="checkbox" name="days" value="friday" /> Friday
+        </div>
+
+        <div class="display">
+          <input type="submit" value="Submit" /><br />
+          <input type="reset" value="Reset" id="reset" /><br />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
